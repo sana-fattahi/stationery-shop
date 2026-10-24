@@ -1,14 +1,141 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Petit Atelie</title>
   </head>
-  <body>
+  <body class="font-dirooz ">
     <head>
-        
+      <div
+        class="grid grid-cols-[repeat(4,auto)] items-center justify-between py-3 w-92/100 mx-auto"
+      >
+        <!-- logo -->
+        <div>
+          <h2 class="font-serif text-blue-900 font-bold text-xl tracking-wide">
+            Petit Atelie
+          </h2>
+          <p class="text-blue-900 text-xs font-bold">
+            فروشگاه هنری لوازم تحریر
+          </p>
+        </div>
+        <!-- navigation -->
+        <nav>
+          <ul class="inline-flex gap-8 text-blue-900 font-bold">
+            <li
+              class="text-amber-400 transition-all duration-[0.4s] relative overflow-hidden"
+            >
+              <a
+                class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
+                href="#"
+                >خانه</a
+              >
+            </li>
+            <li
+              class="hover:text-amber-400 transition-all duration-[0.4s] relative overflow-hidden"
+            >
+              <a
+                class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
+                href="#"
+                >محصولات</a
+              >
+            </li>
+            <li
+              class="hover:text-amber-400 transition-all duration-[0.4s] relative overflow-hidden"
+            >
+              <a
+                class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
+                href="#"
+                >پلنرهای هنری</a
+              >
+            </li>
+            <li
+              class="hover:text-amber-400 transition-all duration-[0.4s] relative overflow-hidden"
+            >
+              <a
+                class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
+                href="#"
+                >درباره ما</a
+              >
+            </li>
+            <li
+              class="hover:text-amber-400 transition-all duration-[0.4s] relative overflow-hidden"
+            >
+              <a
+                class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
+                href="#"
+                >تماس با ما</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- search box -->
+        <form action="#" class="flex items-center relative">
+          <button type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-4.5 text-gray-400 absolute right-5/100 top-1/2 -translate-y-1/2 cursor-pointer hover:text-amber-400"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </button>
+          <input
+            type="search"
+            name="search"
+            placeholder="جستجو در فروشگاه.."
+            class="bg-stone-200 rounded-full px-10 py-2 text-sm text-gray-600 font-bold outline-amber-400"
+          />
+        </form>
+        <div class="flex gap-6">
+          <!-- dark/light mode -->
+          <div
+            class="border border-gray-300 rounded-md p-0.5 cursor-pointer shadow-md shadow-blue-900/35 hover:shadow-xs transition-all duration-[0.4s]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-blue-900"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              />
+            </svg>
+          </div>
+          <!-- order btn -->
+          <div
+            class="border border-gray-300 rounded-md p-0.5 cursor-pointer shadow-md shadow-blue-900/35 hover:shadow-xs transition-all duration-[0.4s]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-blue-900"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </head>
   </body>
 </html>
