@@ -9,10 +9,8 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
-    --color-sky-50: oklch(97.7% 0.013 236.62);
     --color-sky-700: oklch(50% 0.134 242.749);
     --color-sky-900: oklch(39.1% 0.09 240.876);
     --color-sky-950: oklch(29.3% 0.066 243.157);
@@ -238,6 +236,9 @@
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
+  }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
@@ -332,12 +333,6 @@
   .w-85\/100 {
     width: calc(85 / 100 * 100%);
   }
-  .w-90 {
-    width: calc(var(--spacing) * 90);
-  }
-  .w-90\/100 {
-    width: calc(90 / 100 * 100%);
-  }
   .w-92 {
     width: calc(var(--spacing) * 92);
   }
@@ -425,9 +420,6 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .rounded-lg {
-    border-radius: var(--radius-lg);
-  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
@@ -463,6 +455,9 @@
   .bg-\[radial-gradient\(circle_at_center\,_\#fff\,_\#ffffff66\,_\#ffffff00\)\] {
     background-image: radial-gradient(circle at center, #fff, #ffffff66, #ffffff00);
   }
+  .bg-\[url\(\.\.\/assets\/images\/\)\] {
+    background-image: url(../assets/images/);
+  }
   .bg-\[url\(\.\.\/assets\/images\/11\.png\)\] {
     background-image: url(../assets/images/11.png);
   }
@@ -471,6 +466,12 @@
   }
   .bg-\[url\(\.\.\/assets\/images\/hero-img\.jpg\)\] {
     background-image: url(../assets/images/hero-img.jpg);
+  }
+  .bg-\[url\(\.\.\/assets\/images\/planner\.\)\] {
+    background-image: url(../assets/images/planner.);
+  }
+  .bg-\[url\(\.\.\/assets\/images\/planner\.png\)\] {
+    background-image: url(../assets/images/planner.png);
   }
   .bg-cover {
     background-size: cover;
@@ -740,9 +741,6 @@
     }
     .hover\:text-sky-900:hover {
       color: var(--color-sky-900);
-    }
-    .hover\:text-transparent:hover {
-      color: transparent;
     }
     .hover\:text-white:hover {
       color: var(--color-white);
