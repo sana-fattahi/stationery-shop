@@ -1,28 +1,28 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <title>Petit Atelie</title>
   </head>
-  <body class="font-dirooz">
+  <body class="font-dirooz dark:bg-gray-900 ">
     <head>
       <div
         class="grid grid-cols-[repeat(4,auto)] items-center justify-between py-3 w-92/100 mx-auto"
       >
         <!-- logo -->
         <div>
-          <h2 class="font-serif text-blue-900 font-bold text-xl tracking-wide">
+          <h2 class="font-serif text-blue-900 font-bold text-xl tracking-wide dark:text-white">
             Petit Atelie
           </h2>
-          <p class="text-blue-900 text-xs font-bold">
+          <p class="text-blue-900 text-xs font-bold dark:text-gray-300">
             فروشگاه هنری لوازم تحریر
           </p>
         </div>
         <!-- navigation -->
         <nav>
-          <ul class="inline-flex gap-8 text-blue-900 font-bold">
+          <ul class="inline-flex gap-8 text-blue-900 font-bold dark:text-white">
             <li
               class="text-amber-400 transition-all duration-[0.4s] relative overflow-hidden"
             >
@@ -92,13 +92,13 @@
             type="search"
             name="search"
             placeholder="جستجو در فروشگاه.."
-            class="bg-stone-200 rounded-full px-10 py-2 text-sm text-gray-600 font-bold outline-amber-400"
+            class="bg-stone-200 rounded-full px-10 py-2 text-sm text-gray-600 font-bold outline-amber-400 dark:bg-gray-800"
           />
         </form>
         <div class="flex gap-6">
           <!-- dark/light mode -->
-          <div
-            class="border border-gray-300 rounded-md p-0.5 cursor-pointer shadow-md shadow-blue-900/35 hover:shadow-xs transition-all duration-[0.4s]"
+          <button id="toggleBtn"
+            class="border border-gray-300 rounded-md p-0.5 cursor-pointer shadow-md shadow-blue-900/35 hover:shadow-xs transition-all duration-[0.4s] dark:border-gray-900"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -114,10 +114,10 @@
                 d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
               />
             </svg>
-          </div>
+          </button>
           <!-- order btn -->
           <div
-            class="border border-gray-300 rounded-md p-0.5 cursor-pointer shadow-md shadow-blue-900/35 hover:shadow-xs transition-all duration-[0.4s]"
+            class="border border-gray-300 rounded-md p-0.5 cursor-pointer shadow-md shadow-blue-900/35 hover:shadow-xs transition-all duration-[0.4s] dark:border-gray-900"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -143,17 +143,17 @@
         class="w-full bg-[url(../assets/images/hero-img.jpg)] h-[65dvh] bg-cover flex items-center"
       >
         <div
-          class="bg-[radial-gradient(circle_at_center,_#fff,_#ffffff66,_#ffffff00)] shadow-white/80 shadow-xl h-[97%] w-[28%] rounded-full flex flex-col justify-center items-center gap-4 translate-x-[-200%]"
+          class="bg-[radial-gradient(circle_at_center,_#fff,_#ffffff66,_#ffffff00)] shadow-white/80 shadow-xl h-[97%] w-[28%] rounded-full flex flex-col justify-center items-center gap-4 translate-x-[-200%] dark:bg-[radial-gradient(circle_at_center,_#0B1F2A,_#0B1F3A00)] dark:shadow-black/20"
         >
-          <p class="text-sky-900 text-5xl leading-15 font-bold">
+          <p class="text-sky-900 text-5xl leading-15 font-bold dark:text-white">
             جایی برای<br />
             فکرهای قشنگ
           </p>
-          <h3 class="text-sky-900 text-md font-bold">
+          <h3 class="text-sky-900 text-md font-bold dark:text-gray-300">
             لوازم تحریر خاص با الهام از آثار ونگوگ
           </h3>
           <a
-            class="flex gap-2 bg-sky-900 text-white px-4 py-2 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s]"
+            class="flex gap-2 bg-sky-900 text-white font-bold px-4 py-3 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s] dark:bg-amber-300 dark:text-sky-900 dark:hover:shadow-amber-300"
             href="#"
             >مشاهده محصولات
             <svg
@@ -175,7 +175,7 @@
       </div>
       <!-- categories -->
       <div class="w-85/100 mx-auto">
-        <h4 class="text-sky-900 text-sm font-bold inline-flex gap-2 mt-4">
+        <h4 class="text-sky-900 text-sm font-bold inline-flex gap-2 mt-4 dark:text-amber-300">
           دسته بندی محصولات
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +199,7 @@
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
               >دفتر و دفترچه</a
             >
           </div>
@@ -210,7 +210,7 @@
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
               >خودکار و روان نویس</a
             >
           </div>
@@ -221,7 +221,7 @@
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
               >مدادرنگی و ماژیک</a
             >
           </div>
@@ -232,7 +232,7 @@
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
               >پک های هدیه</a
             >
           </div>
@@ -243,7 +243,7 @@
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
               >استیکر و تزئینات</a
             >
           </div>
@@ -254,7 +254,7 @@
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
               >لوازم هنری</a
             >
           </div>
@@ -264,10 +264,10 @@
       <section class="flex w-95/100 mx-auto my-10 gap-6">
         <div class="w-65/100">
           <div class="flex justify-between items-center mb-6">
-            <h3 class="text-2xl text-sky-900 font-bold">محبوب ترین ها</h3>
+            <h3 class="text-2xl text-sky-900 font-bold dark:text-white">محبوب ترین ها</h3>
             <a
               href="#"
-              class="text-sky-700 font-bold text-sm hover:text-amber-400 transition-all duration-[0.4s]"
+              class="text-sky-700 font-bold text-sm hover:text-amber-400 transition-all duration-[0.4s] dark:text-amber-300"
             >
               مشاهده همه
               <svg
@@ -288,7 +288,7 @@
           </div>
           <div class="grid grid-cols-[repeat(4,auto)] gap-3">
             <article
-              class="rounded-2xl overflow-hidden border border-gray-200 h-fit hover:-translate-y-2 shadow-lg shadow-gray-200 transition-all duration-[0.4s] group"
+              class="rounded-2xl overflow-hidden border border-gray-200 h-fit hover:-translate-y-2 shadow-lg shadow-gray-200 transition-all duration-[0.4s] group dark:border-gray-900 dark:shadow-gray-800"
             >
               <div class="h-50/100 overflow-hidden">
                 <img
@@ -298,7 +298,7 @@
                 />
               </div>
               <div class="p-4">
-                <h4 class="text-sky-900 font-bold text-sm">
+                <h4 class="text-sky-900 font-bold text-sm dark:text-gray-200">
                   مدادرنگی دوازده رنگ
                 </h4>
                 <p class="font-bold text-sky-900 my-3">
@@ -312,7 +312,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400"
+                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
                     >
                       <path
                         stroke-linecap="round"
@@ -331,7 +331,7 @@
             </article>
 
             <article
-              class="rounded-2xl overflow-hidden border border-gray-200 h-fit hover:-translate-y-2 shadow-lg shadow-gray-200 transition-all duration-[0.4s] group"
+              class="rounded-2xl overflow-hidden border border-gray-200 h-fit hover:-translate-y-2 shadow-lg shadow-gray-200 transition-all duration-[0.4s] group dark:border-gray-900 dark:shadow-gray-800"
             >
               <div class="h-50/100 overflow-hidden">
                 <img
@@ -341,7 +341,7 @@
                 />
               </div>
               <div class="p-4">
-                <h4 class="text-sky-900 font-bold text-sm">ست چسب ونگوگ</h4>
+                <h4 class="text-sky-900 font-bold text-sm dark:text-gray-200">ست چسب ونگوگ</h4>
                 <p class="font-bold text-sky-900 my-3">
                   <span class="text-amber-400">298,000</span> تومان
                 </p>
@@ -353,7 +353,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400"
+                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
                     >
                       <path
                         stroke-linecap="round"
@@ -372,7 +372,7 @@
             </article>
 
             <article
-              class="rounded-2xl overflow-hidden border border-gray-200 h-fit hover:-translate-y-2 shadow-lg shadow-gray-200 transition-all duration-[0.4s] group"
+              class="rounded-2xl overflow-hidden border border-gray-200 h-fit hover:-translate-y-2 shadow-lg shadow-gray-200 transition-all duration-[0.4s] group dark:border-gray-900 dark:shadow-gray-800"
             >
               <div class="h-50/100 overflow-hidden">
                 <img
@@ -382,7 +382,7 @@
                 />
               </div>
               <div class="p-4">
-                <h4 class="text-sky-900 font-bold text-sm">
+                <h4 class="text-sky-900 font-bold text-sm dark:text-gray-200">
                   خودکار شب‌های‌پرستاره
                 </h4>
                 <p class="font-bold text-sky-900 my-3">
@@ -396,7 +396,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400"
+                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
                     >
                       <path
                         stroke-linecap="round"
@@ -415,7 +415,7 @@
             </article>
 
             <article
-              class="rounded-2xl overflow-hidden border border-gray-200 h-fit hover:-translate-y-2 shadow-lg shadow-gray-200 transition-all duration-[0.4s] group"
+              class="rounded-2xl overflow-hidden border border-gray-200 h-fit hover:-translate-y-2 shadow-lg shadow-gray-200 transition-all duration-[0.4s] group dark:border-gray-900 dark:shadow-gray-800"
             >
               <div class="h-50/100 overflow-hidden">
                 <img
@@ -425,7 +425,7 @@
                 />
               </div>
               <div class="p-4">
-                <h4 class="text-sky-900 font-bold text-sm">
+                <h4 class="text-sky-900 font-bold text-sm dark:text-gray-200">
                   دفتر یادداشت ونگوگ
                 </h4>
                 <p class="font-bold text-sky-900 my-3">
@@ -439,7 +439,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400"
+                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
                     >
                       <path
                         stroke-linecap="round"
@@ -699,5 +699,6 @@
         </div>
       </div>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
