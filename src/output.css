@@ -27,9 +27,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-3xs: 16rem;
-    --container-2xs: 18rem;
-    --container-xs: 20rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -371,9 +368,6 @@
   .h-full {
     height: 100%;
   }
-  .w-28 {
-    width: calc(var(--spacing) * 28);
-  }
   .w-30 {
     width: calc(var(--spacing) * 30);
   }
@@ -428,8 +422,17 @@
   .w-95\/100 {
     width: calc(95 / 100 * 100%);
   }
+  .w-auto {
+    width: auto;
+  }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
+  }
+  .w-max {
+    width: max-content;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -490,6 +493,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   :where(.space-y-2 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
@@ -500,6 +506,15 @@
   }
   .overflow-x-auto {
     overflow-x: auto;
+  }
+  .overflow-x-clip {
+    overflow-x: clip;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -634,9 +649,6 @@
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
-  }
-  .pr-\[5\%\] {
-    padding-right: 5%;
   }
   .font-dirooz {
     font-family: var(--font-dirooz);
@@ -968,8 +980,11 @@
     .max-lg\:hidden {
       display: none;
     }
-    .max-lg\:w-24 {
-      width: calc(var(--spacing) * 24);
+    .max-lg\:w-95\/100 {
+      width: calc(95 / 100 * 100%);
+    }
+    .max-lg\:w-full {
+      width: 100%;
     }
     .max-lg\:text-lg {
       font-size: var(--text-lg);
@@ -979,6 +994,10 @@
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
+    .max-lg\:text-xs {
+      font-size: var(--text-xs);
+      line-height: var(--tw-leading, var(--text-xs--line-height));
+    }
   }
   @media (width < 48rem) {
     .max-md\:col-start-2 {
@@ -987,14 +1006,35 @@
     .max-md\:col-end-3 {
       grid-column-end: 3;
     }
+    .max-md\:ml-0 {
+      margin-left: 0px;
+    }
     .max-md\:block {
       display: block;
     }
     .max-md\:hidden {
       display: none;
     }
-    .max-md\:bg-center {
-      background-position: center;
+    .max-md\:w-18 {
+      width: calc(var(--spacing) * 18);
+    }
+    .max-md\:w-20 {
+      width: calc(var(--spacing) * 20);
+    }
+    .max-md\:w-24 {
+      width: calc(var(--spacing) * 24);
+    }
+    .max-md\:w-95\/100 {
+      width: calc(95 / 100 * 100%);
+    }
+    .max-md\:w-fit {
+      width: fit-content;
+    }
+    .max-md\:overflow-x-auto {
+      overflow-x: auto;
+    }
+    .max-md\:overflow-x-scroll {
+      overflow-x: scroll;
     }
     .max-md\:bg-right {
       background-position: right;

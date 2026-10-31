@@ -6,7 +6,7 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Petit Atelie</title>
   </head>
-  <body class="font-dirooz dark:bg-gray-900">
+  <body class="font-dirooz dark:bg-gray-900 overflow-x-clip">
     <head>
       <div
         class="grid grid-cols-[repeat(4,auto)] items-center justify-between py-3 px-[5%] sticky bg-white/70 top-0 z-50 backdrop-blur-md dark:bg-gray-900/70"
@@ -250,7 +250,7 @@
         </div>
       </div>
       <!-- categories -->
-      <div class="w-85/100 mx-auto">
+      <div class="w-85/100 mx-auto max-lg:w-95/100 max-md:ml-0 overflow-x-hidden">
         <h4
           class="text-sky-900 text-sm font-bold inline-flex gap-2 mt-4 dark:text-amber-300"
         >
@@ -270,72 +270,76 @@
             />
           </svg>
         </h4>
-        <div class="grid grid-cols-6 my-6">
+        <div class="max-md:overflow-x-scroll">
+
+          <div class="w-auto h-full flex justify-center gap-6 my-6 max-md:w-fit">
+
           <div class="flex flex-col justify-center items-center gap-2">
-            <div class="w-70/100 rounded-full overflow-hidden">
+            <div class="w-70/100 rounded-full overflow-hidden max-md:w-18">
               <img src="../assets/images/daftar.png" alt="دفتر" />
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200 max-lg:text-sm max-md:text-xs whitespace-nowrap"
               >دفتر و دفترچه</a
             >
           </div>
 
           <div class="flex flex-col justify-center items-center gap-2">
-            <div class="w-70/100 rounded-full overflow-hidden">
+            <div class="w-70/100 rounded-full overflow-hidden max-md:w-18">
               <img src="../assets/images/khodkar.png" alt="خودکار" />
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200 max-lg:text-sm max-md:text-xs whitespace-nowrap"
               >خودکار و روان نویس</a
             >
           </div>
 
           <div class="flex flex-col justify-center items-center gap-2">
-            <div class="w-70/100 rounded-full overflow-hidden">
+            <div class="w-70/100 rounded-full overflow-hidden max-md:w-18">
               <img src="../assets/images/medad.png" alt="مدادرنگی و ماژیک" />
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200 max-lg:text-sm max-md:text-xs whitespace-nowrap"
               >مدادرنگی و ماژیک</a
             >
           </div>
 
           <div class="flex flex-col justify-center items-center gap-2">
-            <div class="w-70/100 rounded-full overflow-hidden">
+            <div class="w-70/100 rounded-full overflow-hidden max-md:w-18">
               <img src="../assets/images/hedih.png" alt="پک هدیه" />
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200 max-lg:text-sm max-md:text-xs whitespace-nowrap"
               >پک های هدیه</a
             >
           </div>
 
           <div class="flex flex-col justify-center items-center gap-2">
-            <div class="w-70/100 rounded-full overflow-hidden">
+            <div class="w-70/100 rounded-full overflow-hidden max-md:w-18">
               <img src="../assets/images/taziin.png" alt="استیکر و تزئینات" />
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200 max-lg:text-sm max-md:text-xs whitespace-nowrap"
               >استیکر و تزئینات</a
             >
           </div>
 
           <div class="flex flex-col justify-center items-center gap-2">
-            <div class="w-70/100 rounded-full overflow-hidden">
+            <div class="w-70/100 rounded-full overflow-hidden max-md:w-18">
               <img src="../assets/images/honary.png" alt="لوازم هنری" />
             </div>
             <a
               href="#"
-              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200"
+              class="text-sky-900 font-bold transition-all duration-[0.4s] hover:text-amber-400 dark:text-gray-200 max-lg:text-sm max-md:text-xs whitespace-nowrap"
               >لوازم هنری</a
             >
           </div>
+        </div>
         </div>
       </div>
       <!-- product section -->
