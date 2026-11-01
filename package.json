@@ -4,6 +4,7 @@
     "tailwindcss": "^4.3.3"
   },
   "scripts": {
-    "build": "npm.cmd exec @tailwindcss/cli -- -i ./src/input.css -o ./src/output.css --watch"
+    "build": "npm.cmd exec @tailwindcss/cli -- -i ./src/input.css -o ./dist/output.css" ,
+    "dev": "npm.cmd exec @tailwindcss/cli -- -i ./src/input.css -o ./dist/output.css --watch"
   }
 }

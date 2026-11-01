@@ -386,23 +386,14 @@
   .cursor-pointer {
     cursor: pointer;
   }
-  .scroll-mt-10 {
-    scroll-margin-top: calc(var(--spacing) * 10);
-  }
   .scroll-mt-15 {
     scroll-margin-top: calc(var(--spacing) * 15);
-  }
-  .scroll-mt-18 {
-    scroll-margin-top: calc(var(--spacing) * 18);
   }
   .scroll-mt-20 {
     scroll-margin-top: calc(var(--spacing) * 20);
   }
   .scroll-mt-22 {
     scroll-margin-top: calc(var(--spacing) * 22);
-  }
-  .scroll-mt-25 {
-    scroll-margin-top: calc(var(--spacing) * 25);
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
