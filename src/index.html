@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa" dir="rtl" class="">
+<html lang="fa" dir="rtl" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,7 +41,7 @@
             >
               <a
                 class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
-                href="#"
+                href="#product"
                 >محصولات</a
               >
             </li>
@@ -50,7 +50,7 @@
             >
               <a
                 class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
-                href="#"
+                href="#planner"
                 >پلنرهای هنری</a
               >
             </li>
@@ -59,7 +59,7 @@
             >
               <a
                 class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
-                href="#"
+                href="#about"
                 >درباره ما</a
               >
             </li>
@@ -68,7 +68,7 @@
             >
               <a
                 class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
-                href="#"
+                href="#contact"
                 >تماس با ما</a
               >
             </li>
@@ -181,7 +181,7 @@
       >
         <a
           class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
-          href="#"
+          href="#product"
           >محصولات</a
         >
       </li>
@@ -190,7 +190,7 @@
       >
         <a
           class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
-          href="#"
+          href="#planner"
           >پلنرهای هنری</a
         >
       </li>
@@ -199,7 +199,7 @@
       >
         <a
           class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
-          href="#"
+          href="#about"
           >درباره ما</a
         >
       </li>
@@ -208,7 +208,7 @@
       >
         <a
           class="after:content['*'] after:w-full after:h-0.5 after:bg-amber-400 after:bottom-0 after:-right-full after:absolute hover:after:right-0 after:transition-all after:duration-[0.4s]"
-          href="#"
+          href="#contact"
           >تماس با ما</a
         >
       </li>
@@ -250,9 +250,10 @@
         </div>
       </div>
       <!-- categories -->
-      <div class="w-85/100 mx-auto max-lg:w-95/100 max-md:ml-0 overflow-x-hidden">
+      <div class="w-85/100 mx-auto max-lg:w-95/100 max-md:ml-0 overflow-x-hidden scroll-mt-15" id="product">
         <h4
           class="text-sky-900 text-sm font-bold inline-flex gap-2 mt-4 dark:text-amber-300"
+          
         >
           دسته بندی محصولات
           <svg
@@ -609,7 +610,8 @@
       </section>
       <!-- special planners banner -->
       <section
-        class="bg-[url(../assets/images/planner.png)] w-95/100 mx-auto my-6 rounded-2xl p-8 bg-center max-md:bg-[url(../assets/images/mobile-planner.png)] max-md:bg-no-repeat max-md:bg-cover max-md:bg-right"
+        id="planner"
+        class="bg-[url(../assets/images/planner.png)] w-95/100 mx-auto my-6 rounded-2xl p-8 bg-center max-md:bg-[url(../assets/images/mobile-planner.png)] max-md:bg-no-repeat max-md:bg-cover max-md:bg-right scroll-mt-22"
       >
         <h3 class="text-sky-900 text-3xl font-bold">دفترها و پلنرهای خاص</h3>
         <p class="text-sky-900 font-bold text-md my-6 max-lg:text-sm">
@@ -640,7 +642,8 @@
       <!-- about and contact us -->
       <div class="w-95/100 mx-auto mb-4 flex justify-between max-md:flex-col-reverse max-md:gap-3">
         <section
-          class="bg-[url(../assets/images/contact.png)] w-40/100 p-6 rounded-xl max-md:w-full"
+          id="contact"
+          class="bg-[url(../assets/images/contact.png)] w-40/100 p-6 rounded-xl max-md:w-full scroll-mt-20"
         >
           <h3 class="text-sky-900 text-2xl font-bold">عضویت در خبرنامه</h3>
           <p class="text-sky-900 font-bold text-md my-6 max-lg:text-sm">
@@ -663,7 +666,8 @@
         </section>
         <!-- about us -->
         <section
-          class="bg-[url(../assets/images/aboutus.png)] bg-center w-58/100 p-6 rounded-xl max-md:w-full max-md:bg-[url(../assets/images/mobile-loc.png)] max-md:bg-no-repeat max-md:bg-cover max-md:bg-center"
+          id="about"
+          class="bg-[url(../assets/images/aboutus.png)] bg-center w-58/100 p-6 rounded-xl max-md:w-full max-md:bg-[url(../assets/images/mobile-loc.png)] max-md:bg-no-repeat max-md:bg-cover max-md:bg-center scroll-mt-20"
         >
           <h3 class="text-sky-900 text-2xl font-bold">داستان برند</h3>
           <p class="text-sky-900 font-bold text-md my-6 max-lg:text-sm">
