@@ -165,7 +165,7 @@
     <!-- blur sidebar -->
     <input type="checkbox" id="sidebar" class="peer hidden" />
     <ul
-      class="flex flex-col gap-6 text-blue-900 font-bold dark:text-white dark:bg-gray-900/80 fixed bg-white/60 top-17 -right-full w-50/100 bottom-0 items-center p-4 transition-all duration-[0.4s] peer-checked:right-0 backdrop-blur-sm"
+      class="flex flex-col gap-6 text-blue-900 font-bold dark:text-white dark:bg-gray-900/80 fixed bg-white/60 top-17 -right-full w-50/100 bottom-0 items-center p-4 transition-all duration-[0.4s] peer-checked:right-0 backdrop-blur-sm z-50"
     >
       <li
         class="text-amber-400 transition-all duration-[0.4s] relative overflow-hidden"
@@ -343,10 +343,10 @@
         </div>
       </div>
       <!-- product section -->
-      <section class="flex w-95/100 mx-auto my-10 gap-6">
-        <div class="w-65/100">
+      <section class="flex w-95/100 mx-auto my-10 gap-4 max-lg:flex-col-reverse">
+        <div class="w-70/100 max-lg:w-full max-md:w-95/100 max-md:mx-auto">
           <div class="flex justify-between items-center mb-6">
-            <h3 class="text-2xl text-sky-900 font-bold dark:text-white">
+            <h3 class="text-2xl text-sky-900 font-bold dark:text-white max-md:text-xl">
               محبوب ترین ها
             </h3>
             <a
@@ -370,7 +370,7 @@
               </svg>
             </a>
           </div>
-          <div class="grid grid-cols-[repeat(4,auto)] gap-3">
+          <div class="grid grid-cols-[repeat(4,auto)] gap-3 max-md:grid-cols-[repeat(2,auto)] max-md:gap-2">
             <article
               class="rounded-2xl overflow-hidden border border-gray-200 h-fit hover:-translate-y-2 shadow-lg shadow-gray-200 transition-all duration-[0.4s] group dark:border-gray-900 dark:shadow-gray-800"
             >
@@ -381,11 +381,11 @@
                   alt="مدادرنگی"
                 />
               </div>
-              <div class="p-4">
+              <div class="p-2.5">
                 <h4 class="text-sky-900 font-bold text-sm dark:text-gray-200">
                   مدادرنگی دوازده رنگ
                 </h4>
-                <p class="font-bold text-sky-900 my-3">
+                <p class="font-bold text-sky-900 my-3 max-md:text-xs">
                   <span class="text-amber-400">298,000</span> تومان
                 </p>
                 <div class="flex gap-1 justify-between items-center">
@@ -396,7 +396,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
+                      class="size-7 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
                     >
                       <path
                         stroke-linecap="round"
@@ -407,7 +407,7 @@
                   </a>
                   <a
                     href="#"
-                    class="bg-sky-900 text-white font-bold text-xs px-6 py-2 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s]"
+                    class="bg-sky-900 text-white text-sx font-bold text-xs px-3 py-2 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s]"
                     >افزودن به سبد</a
                   >
                 </div>
@@ -424,11 +424,11 @@
                   alt="چسب"
                 />
               </div>
-              <div class="p-4">
+              <div class="p-2.5">
                 <h4 class="text-sky-900 font-bold text-sm dark:text-gray-200">
                   ست چسب ونگوگ
                 </h4>
-                <p class="font-bold text-sky-900 my-3">
+                <p class="font-bold text-sky-900 my-3 max-md:text-xs">
                   <span class="text-amber-400">298,000</span> تومان
                 </p>
                 <div class="flex gap-1 justify-between items-center">
@@ -439,7 +439,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
+                      class="size-7 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
                     >
                       <path
                         stroke-linecap="round"
@@ -450,7 +450,7 @@
                   </a>
                   <a
                     href="#"
-                    class="bg-sky-900 text-white font-bold text-xs px-6 py-2 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s]"
+                    class="bg-sky-900 text-white font-bold text-xs px-4 py-2 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s]"
                     >افزودن به سبد</a
                   >
                 </div>
@@ -467,11 +467,11 @@
                   alt="خودکار روان نویس"
                 />
               </div>
-              <div class="p-4">
+              <div class="p-2.5">
                 <h4 class="text-sky-900 font-bold text-sm dark:text-gray-200">
                   خودکار شب‌های‌پرستاره
                 </h4>
-                <p class="font-bold text-sky-900 my-3">
+                <p class="font-bold text-sky-900 my-3 max-md:text-xs">
                   <span class="text-amber-400">298,000</span> تومان
                 </p>
                 <div class="flex gap-1 justify-between items-center">
@@ -482,7 +482,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
+                      class="size-7 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
                     >
                       <path
                         stroke-linecap="round"
@@ -493,7 +493,7 @@
                   </a>
                   <a
                     href="#"
-                    class="bg-sky-900 text-white font-bold text-xs px-6 py-2 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s]"
+                    class="bg-sky-900 text-white font-bold text-xs px-4 py-2 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s]"
                     >افزودن به سبد</a
                   >
                 </div>
@@ -510,11 +510,11 @@
                   alt="دفتر یادداشت"
                 />
               </div>
-              <div class="p-4">
+              <div class="p-2.5">
                 <h4 class="text-sky-900 font-bold text-sm dark:text-gray-200">
                   دفتر یادداشت ونگوگ
                 </h4>
-                <p class="font-bold text-sky-900 my-3">
+                <p class="font-bold text-sky-900 my-3 max-md:text-xs">
                   <span class="text-amber-400">298,000</span> تومان
                 </p>
                 <div class="flex gap-1 justify-between items-center">
@@ -525,7 +525,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-8 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
+                      class="size-7 text-sky-900 border border-gray-200 rounded-full p-1 hover:scale-[1.15] hover:text-amber-400 transition-all duration-[0.4s] hover:shadow-md hover:shadow-amber-400 dark:border-gray-800"
                     >
                       <path
                         stroke-linecap="round"
@@ -536,7 +536,7 @@
                   </a>
                   <a
                     href="#"
-                    class="bg-sky-900 text-white font-bold text-xs px-6 py-2 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s]"
+                    class="bg-sky-900 text-white font-bold text-xs px-4 py-2 rounded-xl hover:shadow-md hover:shadow-sky-900 transition-all duration-[0.4s]"
                     >افزودن به سبد</a
                   >
                 </div>
@@ -545,16 +545,16 @@
           </div>
         </div>
         <div
-          class="w-30/100 bg-[url(../assets/images/calection.jfif)] rounded-3xl text-white overflow-hidden z-[1]"
+          class="w-28/100 bg-[url(../assets/images/calection.jfif)] bg-center rounded-3xl text-white overflow-hidden z-[1] max-lg:w-full max-lg:p-8 max-lg:bg-[url(../assets/images/derakhte-badam.jpg)] max-lg:bg-no-repeat max-lg:bg-cover"
         >
           <div
-            class="relative top-50/100 px-8 py-4 after:inset-0 after:absolute after:-bottom-8 after:content[''] after:bg-linear-to-t after:from-sky-950 after:to-sky-950/5 after:-z-[1]"
+            class="relative top-45/100 px-8 py-4 after:inset-0 after:absolute after:-bottom-14 after:content[''] after:bg-linear-to-t after:from-sky-950 after:to-sky-950/5 after:-z-[1] max-lg:after:-right-10 max-lg:after:-left-10 max-lg:text-center"
           >
             <h4 class="text-3xl font-bold">کالکشن هنری</h4>
-            <p class="font-bold my-4 ml-6">طرح های الهام گرفته از آثار ونگوگ</p>
+            <p class="font-bold text-sm my-4 ml-6">طرح های الهام گرفته از آثار ونگوگ</p>
             <a
               href="#"
-              class="bg-white border-0 text-sky-900 px-8 py-2 rounded-2xl font-bold inline-block hover:bg-transparent hover:border hover:shadow-sm hover:shadow-white hover:border-white hover:text-white transition-all duration-[0.4s]"
+              class="bg-white border-0 text-sky-900 px-8 py-2 rounded-2xl font-bold inline-block hover:bg-transparent hover:border hover:shadow-sm hover:shadow-white hover:border-white hover:text-white transition-all duration-[0.4s] max-md:text-xs"
             >
               مشاهده مجموعه
               <svg
